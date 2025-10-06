@@ -1,61 +1,61 @@
 {
-  "Factory Registration": {
-    "Panel_ID": "ID 27 C 42",
-    "Manufacturer_Name": "Focchi SpA",
-    "Manufacture_Date(Automatic or factory stamped)": "2025-05-19",
-    "Material_Composition(Glazing + spacer + frame composition)": "8mm ESG + 16 Ar + 8mm ESG",
-    "Declared_Performance(U-value, fire rating, acoustic rating…)": "U=1.3 W/m²K, REI 60, dB=621",
-    "Width(mm)": 1700,
-    "Height(mm)": 3400,
-    "Depth(mm)": 215,
-    "Panel_Weight total waight(kg)": "202.5 kg",
-    "EPD_Carbon_Footprint(kg Co2/ kg panel)": "98.4 kg CO2",
-    "NFC_Tag_ID": "NFC-A2A-ID 27 C 42",
-    "Blockchain_Record_Hash(Stored on-chain)": null,
-    "Access_Tier": "Public "
+  "factory_registration": {
+    "panel_id": "ID_27_C_42",
+    "manufacturer_name": "Focchi SpA",
+    "manufacture_date": "2025-05-12",
+    "material_composition": "6mm ESG + 16 Ar + 6mm ESG",
+    "declared_performance": "U=1.1 W/m²K, REI 30, dB=1487",
+    "width_mm": 1500,
+    "height_mm": 3200,
+    "depth_mm": 200,
+    "panel_weight_kg": 185.2,
+    "epd_carbon_footprint": "92.5 kg CO2",
+    "nfc_tag_id": "NFC-A2A-ID_27_C_42",
+    "blockchain_record_hash": null,
+    "access_tier": "Public"
   },
-  "Installation Metadata(from digital twin inputs)": {
-    "Tower_Name": "Torre Faro (A2A)",
-    "Latitude(degree)": 45.50647,
-    "Longitude(degree)": 9.19818,
-    "Location": "Milan, Italy",
-    "Floor_Number": 27,
-    "Elevation_measured from center of the panel(m)": 72.374218,
-    "Panel_Azimuth(degree)": 50.782148,
-    "Tilt_Angle(degree)": 2.5,
-    "Exposure_Zone": "South-East",
-    "Installation_Date": null,
-    "Installed_By_Wallet": null,
-    "Blockchain_Record_Hash": null,
-    "Access_Tier": "Tier 1& 589"
+  "installation_metadata": {
+    "tower_name": "Torre Faro (A2A)",
+    "latitude": 45.50647,
+    "longitude": 9.19818,
+    "location": "Milan, Italy",
+    "floor_number": 27,
+    "elevation_m": 141.418941,
+    "panel_azimuth_deg": 138.398296,
+    "tilt_angle_deg": 0,
+    "exposure_zone": "Sun-Exposed/South",
+    "installation_date": null,
+    "installed_by_wallet": null,
+    "blockchain_record_hash": null,
+    "access_tier": "Tier 1"
   },
-  "Fault Log Installation": {
-    "Fault_ID(Auto-generated)": null,
-    "Fault_Type(yellow/red/purple)": null,
-    "FML_Detected_Issue": null,
-    "Sensor_Data_Snapshot": null,
-    "Fault_Severity_Level(yellow/red/purple)": null,
-    "Action_Taken": null,
-    "Resolved?": null,
-    "Resolution_Timestamp": null,
-    "Hash of install fault record": null,
-    "Access_Tier": "Tier 1 & 2"
+  "digital_twin_status": {
+    "current_visual_status": null,
+    "last_color_change": null,
+    "access_tier": "Tier 1"
   },
-  "Fault Log Operation(maintanace )": {
-    "Fault_ID": null,
-    "Fault_Type(Panel fault/Platform fault)": null,
-    "Fault_Type (FML_Detected_Issue)": null,
-    "Sensor_Data_Snapshot": null,
-    "Fault_Severity_Level(yellow/red/purple)": null,
-    "Action_Taken": null,
-    "Resolved?": null,
-    "Resolution_Timestamp": null,
-    "Hash of  fault": null,
-    "Access_Tier": "Tier 1 & 2"
+  "fault_log_installation": {
+    "fault_id": null,
+    "fault_type": null,
+    "fml_detected_issue": null,
+    "sensor_data_snapshot": null,
+    "fault_severity_level": null,
+    "action_taken": null,
+    "resolved": null,
+    "resolution_timestamp": null,
+    "hash_of_install_fault_record": null,
+    "access_tier": "Tier 2"
   },
-  "Digital Twin Status": {
-    "Current Visual_Status(yellow/red/purple)": null,
-    "Last_Color_Change(yellow/red/purple)": null,
-    "Access_Tier": "Tier 1"
+  "fault_log_operation": {
+    "fault_id": null,
+    "fault_type": null,
+    "fml_detected_issue": null,
+    "sensor_data_snapshot": null,
+    "fault_severity_level": null,
+    "action_taken": null,
+    "resolved": null,
+    "resolution_timestamp": null,
+    "hash_of_fault": null,
+    "access_tier": "Tier 2"
   }
 }
