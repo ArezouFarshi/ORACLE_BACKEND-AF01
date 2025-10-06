@@ -53,7 +53,8 @@ def filter_dpp_for_user(dpp_json, user_role):
 def get_dpp(panel_id):
     user_role = request.args.get("access", "public")  # default = public
     try:
-        with open(f"{panel_id}.json", "r", encoding="utf-8") as f:
+        # 👇 Adjusted to look inside the panels/ folder
+        with open(f"panels/{panel_id}.json", "r", encoding="utf-8") as f:
             dpp_json = json.load(f)
         filtered = filter_dpp_for_user(dpp_json, user_role)
         return jsonify(filtered)
