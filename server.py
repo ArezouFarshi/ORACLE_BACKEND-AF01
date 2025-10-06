@@ -34,3 +34,27 @@ def anchor():
 if __name__ == "__main__":
     # For local testing only; on Render use gunicorn
     app.run(host="0.0.0.0", port=5000)
+    # --- Access-tier filtering logic ---
+def filter_dpp_for_user(dpp_json, user_role):
+    result = {}
+    for section, fields in dpp_json.items():
+        access = fields.get("Access_Tier", "").lower()
+        if "public" in access:
+            result[section] = fields
+        elif user_role == "tier1" and "tier 1" in access:
+            result[section] = fields
+        elif user_role == "tier2" and ("tier 2" in access or "tier 1" in access):
+            result[section] = fields
+    return result
+
+@app.get("/api/dpp/<panel_id>")
+def get_dpp(panel_id):
+    user_role = request.args.get("access", "public")  # default = public
+    try:
+        with open(f"{panel_id}.json", "r", encoding="utf-8") as f:
+            dpp_json = json.load(f)
+        filtered = filter_dpp_for_user(dpp_json, user_role)
+        return jsonify(filtered)
+    except FileNotFoundError:
+        return jsonify({"error": "Panel not found"}), 404
+
