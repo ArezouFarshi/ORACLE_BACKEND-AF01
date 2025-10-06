@@ -1,0 +1,61 @@
+{
+  "Factory Registration": {
+    "Panel_ID": "ID 9 C 12",
+    "Manufacturer_Name": "Focchi SpA",
+    "Manufacture_Date(Automatic or factory stamped)": "2025-05-12",
+    "Material_Composition(Glazing + spacer + frame composition)": "6mm ESG + 16 Ar + 6mm ESG",
+    "Declared_Performance(U-value, fire rating, acoustic rating\u2026)": "U=1.1 W/m\u00b2K, REI 30, dB=625",
+    "Width(mm)": 1500,
+    "Height(mm)": 3200,
+    "Depth(mm)": 200,
+    "Panel_Weight total waight(kg)": "185.2 kg",
+    "EPD_Carbon_Footprint(kg Co2/ kg panel)": "92.5 kg CO2",
+    "NFC_Tag_ID": "NFC-A2A-ID 9 C 12",
+    "Blockchain_Record_Hash(Stored on-chain)": null,
+    "Access_Tier": "Public "
+  },
+  "Installation Metadata(from digital twin inputs)": {
+    "Tower_Name": "Torre Faro (A2A)",
+    "Latitude(degree)": 45.50647,
+    "Longitude(degree)": 9.19818,
+    "Location": "Milan, Italy",
+    "Floor_Number": 9,
+    "Elevation_measured from center of the panel(m)": 48.850286,
+    "Panel_Azimuth(degree)": 43.578815,
+    "Tilt_Angle(degree)": 0,
+    "Exposure_Zone": "Shaded/North",
+    "Installation_Date": "2025-10-06T17:38:00Z",
+    "Installed_By_Wallet": "0xb8935eBEb1dA663C187fc9090b77E1972A909e12",
+    "Blockchain_Record_Hash": null,
+    "Access_Tier": "Tier 1& 589"
+  },
+  "Fault Log Installation": {
+    "Fault_ID(Auto-generated)": null,
+    "Fault_Type(yellow/red/purple)": null,
+    "FML_Detected_Issue": null,
+    "Sensor_Data_Snapshot": null,
+    "Fault_Severity_Level(yellow/red/purple)": null,
+    "Action_Taken": null,
+    "Resolved?": null,
+    "Resolution_Timestamp": null,
+    "Hash of install fault record": null,
+    "Access_Tier": "Tier 1 & 2"
+  },
+  "Fault Log Operation(maintanace )": {
+    "Fault_ID": null,
+    "Fault_Type(Panel fault/Platform fault)": null,
+    "Fault_Type (FML_Detected_Issue)": null,
+    "Sensor_Data_Snapshot": null,
+    "Fault_Severity_Level(yellow/red/purple)": null,
+    "Action_Taken": null,
+    "Resolved?": null,
+    "Resolution_Timestamp": null,
+    "Hash of  fault": null,
+    "Access_Tier": "Tier 1 & 2"
+  },
+  "Digital Twin Status": {
+    "Current Visual_Status(yellow/red/purple)": null,
+    "Last_Color_Change(yellow/red/purple)": null,
+    "Access_Tier": "Tier 1"
+  }
+}
