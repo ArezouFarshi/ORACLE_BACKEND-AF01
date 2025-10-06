@@ -1,4 +1,5 @@
 import os
+import json
 from flask import Flask, request, jsonify
 from oracle_automation import process_and_anchor
 
@@ -6,9 +7,11 @@ app = Flask(__name__)
 
 AUTH_TOKEN = os.getenv("AUTH_TOKEN")  # optional bearer auth
 
+
 @app.get("/")
 def health():
     return "🟢 Oracle backend running!"
+
 
 @app.post("/anchor")
 def anchor():
@@ -31,10 +34,8 @@ def anchor():
     except Exception as e:
         return jsonify({"status": "error", "message": str(e)}), 500
 
-if __name__ == "__main__":
-    # For local testing only; on Render use gunicorn
-    app.run(host="0.0.0.0", port=5000)
-    # --- Access-tier filtering logic ---
+
+# --- Access-tier filtering logic ---
 def filter_dpp_for_user(dpp_json, user_role):
     result = {}
     for section, fields in dpp_json.items():
@@ -47,6 +48,7 @@ def filter_dpp_for_user(dpp_json, user_role):
             result[section] = fields
     return result
 
+
 @app.get("/api/dpp/<panel_id>")
 def get_dpp(panel_id):
     user_role = request.args.get("access", "public")  # default = public
@@ -58,3 +60,7 @@ def get_dpp(panel_id):
     except FileNotFoundError:
         return jsonify({"error": "Panel not found"}), 404
 
+
+if __name__ == "__main__":
+    # For local testing only; on Render use gunicorn
+    app.run(host="0.0.0.0", port=5000)
