@@ -12,7 +12,7 @@
     "epd_carbon_footprint": "92.5 kg CO2",
     "nfc_tag_id": "NFC-A2A-ID_27_C_42",
     "blockchain_record_hash": null,
-    "access_tier": "Public"
+    "Access_Tier": "Public"
   },
   "installation_metadata": {
     "tower_name": "Torre Faro (A2A)",
@@ -27,12 +27,12 @@
     "installation_date": null,
     "installed_by_wallet": null,
     "blockchain_record_hash": null,
-    "access_tier": "Tier 1"
+    "Access_Tier": "Tier 1"
   },
   "digital_twin_status": {
     "current_visual_status": null,
     "last_color_change": null,
-    "access_tier": "Tier 1"
+    "Access_Tier": "Tier 1"
   },
   "fault_log_installation": {
     "fault_id": null,
@@ -44,7 +44,7 @@
     "resolved": null,
     "resolution_timestamp": null,
     "hash_of_install_fault_record": null,
-    "access_tier": "Tier 2"
+    "Access_Tier": "Tier 2"
   },
   "fault_log_operation": {
     "fault_id": null,
@@ -56,6 +56,6 @@
     "resolved": null,
     "resolution_timestamp": null,
     "hash_of_fault": null,
-    "access_tier": "Tier 2"
+    "Access_Tier": "Tier 2"
   }
 }
